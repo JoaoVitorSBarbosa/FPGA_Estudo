@@ -1,0 +1,10 @@
+|teste1
+SW[0] => P1.IN0
+SW[1] => P1.IN1
+SW[1] => P2.IN0
+SW[2] => P2.IN1
+SW[3] => P2.IN2
+SW[4] => ~NO_FANOUT~
+LEDR[0] <= P3.DB_MAX_OUTPUT_PORT_TYPE
+
+
