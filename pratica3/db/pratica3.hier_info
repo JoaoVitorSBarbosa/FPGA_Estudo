@@ -1,0 +1,112 @@
+|pratica3
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+HEX0[0] <= SEG7_LUT:disp0.oSEG
+HEX0[1] <= SEG7_LUT:disp0.oSEG
+HEX0[2] <= SEG7_LUT:disp0.oSEG
+HEX0[3] <= SEG7_LUT:disp0.oSEG
+HEX0[4] <= SEG7_LUT:disp0.oSEG
+HEX0[5] <= SEG7_LUT:disp0.oSEG
+HEX0[6] <= SEG7_LUT:disp0.oSEG
+HEX1[0] <= SEG7_LUT:disp1.oSEG
+HEX1[1] <= SEG7_LUT:disp1.oSEG
+HEX1[2] <= SEG7_LUT:disp1.oSEG
+HEX1[3] <= SEG7_LUT:disp1.oSEG
+HEX1[4] <= SEG7_LUT:disp1.oSEG
+HEX1[5] <= SEG7_LUT:disp1.oSEG
+HEX1[6] <= SEG7_LUT:disp1.oSEG
+
+
+|pratica3|contaUns:contador
+d[0] => Add0.IN2
+d[0] => num_bits.DATAA
+d[1] => num_bits.OUTPUTSELECT
+d[1] => num_bits.OUTPUTSELECT
+d[2] => num_bits.OUTPUTSELECT
+d[2] => num_bits.OUTPUTSELECT
+d[2] => num_bits.OUTPUTSELECT
+d[3] => num_bits.OUTPUTSELECT
+d[3] => num_bits.OUTPUTSELECT
+d[3] => num_bits.OUTPUTSELECT
+d[3] => num_bits.OUTPUTSELECT
+d[4] => num_bits.OUTPUTSELECT
+d[4] => num_bits.OUTPUTSELECT
+d[4] => num_bits.OUTPUTSELECT
+d[4] => num_bits.OUTPUTSELECT
+d[4] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[5] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[6] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[7] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[8] => num_bits.OUTPUTSELECT
+d[9] => num_bits.OUTPUTSELECT
+d[9] => num_bits.OUTPUTSELECT
+d[9] => num_bits.OUTPUTSELECT
+d[9] => num_bits.OUTPUTSELECT
+q[0] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pratica3|SEG7_LUT:disp0
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pratica3|SEG7_LUT:disp1
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
